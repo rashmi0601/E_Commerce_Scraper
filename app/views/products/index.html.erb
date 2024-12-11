@@ -1,0 +1,23 @@
+<h1>Products</h1>
+
+<%= form_with url: scrape_products_path, method: :post, local: true do |form| %>
+  <%= form.text_field :url, placeholder: "Enter product URL" %>
+  <%= form.submit "Scrape Product" %>
+<% end %>
+
+<%= form_with url: products_path, method: :get, local: true do |form| %>
+  <%= form.text_field :query, placeholder: "Search products" %>
+  <%= form.submit "Search" %>
+<% end %>
+
+<% @categories.each do |category| %>
+  <h2><%= category.name %></h2>
+  <% category.products.each do |product| %>
+    <div>
+      <h3><%= product.title %></h3>
+      <p><%= product.description %></p>      
+      <p>Size: <%= product.size %></p>
+      <p>Price: <%= product.price %></p>
+    </div>
+  <% end %>
+<% end %>
