@@ -7,12 +7,6 @@ class Product < ApplicationRecord
     products_to_update.find_each do |product|
       ScrapeProductJob.perform_later(product.id, product.url)     
       product.update(last_scraped_at: Time.current)
-    products_to_update = Product.where("last_scraped_at < ?", Time.current)    
-    p "------------------------"
-    p products_to_update
-    products_to_update.find_each do |product|
-      ScrapeProductJob.perform_later(product.url)      
-      product.update(last_scraped_at: Time.current)
     end
   end
 end
