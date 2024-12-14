@@ -1,0 +1,239 @@
+{
+  "RSpec": {
+    "coverage": {
+      "D:/New folder/e_commerce_scraper/app/workers/product_update_worker.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "D:/New folder/e_commerce_scraper/app/helpers/application_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "D:/New folder/e_commerce_scraper/app/controllers/products_controller.rb": {
+        "lines": [
+          1,
+          1,
+          3,
+          null,
+          3,
+          1,
+          1,
+          null,
+          null,
+          null,
+          2,
+          null,
+          2,
+          null,
+          null,
+          null,
+          null,
+          1,
+          3,
+          null,
+          3,
+          2,
+          2,
+          null,
+          1,
+          null,
+          null,
+          3,
+          3,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "D:/New folder/e_commerce_scraper/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "D:/New folder/e_commerce_scraper/app/jobs/scrape_product_job.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          2,
+          2,
+          2,
+          null,
+          2,
+          1,
+          null,
+          1,
+          null,
+          null,
+          2,
+          2,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0,
+          null,
+          null,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      "D:/New folder/e_commerce_scraper/app/jobs/application_job.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "D:/New folder/e_commerce_scraper/app/models/product.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          2,
+          2,
+          2,
+          2,
+          null,
+          null,
+          null
+        ]
+      },
+      "D:/New folder/e_commerce_scraper/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "D:/New folder/e_commerce_scraper/app/services/product_scraper.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          4,
+          4,
+          null,
+          null,
+          1,
+          2,
+          2,
+          null,
+          2,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          4,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          4,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "D:/New folder/e_commerce_scraper/app/models/category.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "D:/New folder/e_commerce_scraper/app/channels/application_cable/channel.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {}
+      },
+      "D:/New folder/e_commerce_scraper/app/channels/application_cable/connection.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {}
+      },
+      "D:/New folder/e_commerce_scraper/app/mailers/application_mailer.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {}
+      }
+    },
+    "timestamp": 1734203565
+  }
+}
