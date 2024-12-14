@@ -12,7 +12,8 @@ class ScrapeProductJob < ApplicationJob
       contact_info: data[:contact_info],
       size: data[:size],
       category: category,
-      last_scraped_at: Time.current
+      last_scraped_at: Time.current,
+      url: data[:url]
     )
   rescue => e
     Rails.logger.error "Scraping failed for URL #{url}: #{e.message}"
