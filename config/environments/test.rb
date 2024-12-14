@@ -50,6 +50,7 @@ Rails.application.configure do
 
   # Tell Active Support which deprecation messages to disallow.
   config.active_support.disallowed_deprecation_warnings = []
+  config.scraper_api_key = ENV['SCRAPER_API_KEY'] || 'your_test_scraper_api_key_here'
 
   # Raises error for missing translations.
   # config.i18n.raise_on_missing_translations = true
