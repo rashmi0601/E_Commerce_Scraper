@@ -8,13 +8,19 @@ class ProductsController < ApplicationController
     end
   
     def index
-      @categories = if params[:query].present?
-                      Category.joins(:products)
-                              .where("products.title ILIKE ?", "%#{params[:query]}%")
-                              .distinct
-                    else
-                      Category.includes(:products)
-                    end
+      @query = params[:query]
+      if @query.present?
+        @products = Product.where("title ILIKE ?", "%#{@query}%") 
+        @categories = Category.includes(:products).where(products: { id: @products }) 
+      else
+        @products = Product.all
+        @categories = Category.includes(:products) 
+      end
+  
+      respond_to do |format|
+          format.html # Render full HTML page for non-AJAX requests
+          format.js   # Render partial for AJAX requests
+      end
     end
   end
   

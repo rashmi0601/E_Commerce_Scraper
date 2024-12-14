@@ -1,0 +1,15 @@
+<div id="product-results">
+  <% @categories.each do |category| %>
+    <h2><%= category.name %></h2>
+    <ul>
+      <% category.products.each do |product| %>
+        <li>
+          <h3><%= product.title %></h3>
+          <p><%= product.description %></p>
+          <p>Size: <%= product.size %></p>
+          <p>Price: <%= product.price %></p>
+        </li>
+      <% end %>
+    </ul>
+  <% end %>
+</div>
