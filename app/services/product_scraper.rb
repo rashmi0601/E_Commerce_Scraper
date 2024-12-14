@@ -2,7 +2,7 @@ require 'open-uri'
 require 'nokogiri'
 
 class ProductScraper
-  SCRAPER_API_KEY = '8091b278d360aee09df33a1c08b2825b'
+  SCRAPER_API_KEY = Rails.application.config.scraper_api_key
 
   def initialize(url)
     @url = url
@@ -11,7 +11,7 @@ class ProductScraper
 
   def scrape
     scraperapi_url = "http://api.scraperapi.com?api_key=#{SCRAPER_API_KEY}&url=#{URI::DEFAULT_PARSER.escape(@url)}"
-    puts "Scraping URL: #{scraperapi_url}"
+    Rails.logger.debug "Scraping URL: #{scraperapi_url}"
   
     page = Nokogiri::HTML(URI.open(scraperapi_url))
  
@@ -24,7 +24,7 @@ class ProductScraper
       category_name: extract_category_name(page) || "Category not found"
     }
   rescue OpenURI::HTTPError => e
-    puts "Scraping failed for URL #{@url}: #{e.message}"
+    Rails.logger.debug "Scraping failed for URL #{@url}: #{e.message}"
     nil
   end
   
