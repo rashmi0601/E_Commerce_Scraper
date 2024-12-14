@@ -21,7 +21,8 @@ class ProductScraper
       price: page.css(@selectors[:price])&.text&.strip&.gsub(/[^\d.]/, '').to_f || "Price not found",
       contact_info: page.css(@selectors[:contact_info])&.text&.strip || "Contact info not found",
       size: extract_sizes(page) || "Size not found",
-      category_name: extract_category_name(page) || "Category not found"
+      category_name: extract_category_name(page) || "Category not found",
+      url: @url
     }
   rescue OpenURI::HTTPError => e
     Rails.logger.debug "Scraping failed for URL #{@url}: #{e.message}"
