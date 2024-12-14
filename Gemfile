@@ -60,6 +60,7 @@ gem 'rack-cors'
 
 gem "nokogiri", "~> 1.13"
 gem "sidekiq", "~> 7.3"
+gem 'sidekiq-cron'
 gem 'open-uri'
 gem 'redis'
 gem 'jquery-rails'

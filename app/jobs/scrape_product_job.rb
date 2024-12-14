@@ -29,3 +29,4 @@ class ScrapeProductJob < ApplicationJob
     Rails.logger.error "Scraping failed for URL #{url}: #{e.message}"
   end
 end
+ 
