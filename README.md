@@ -115,6 +115,12 @@ SCRAPER_API_KEY=your_scraperapi_key
 
 * ScraperAPI: Proxy API for handling scraping.
 
+* Rspec: Testing framework.
+
+* FactoryBot:  For creating test data.
+
+* SimpleCov: Code coverage analysis tool
+
 # Known Issues and Future Enhancements
 
 * Known Issues
